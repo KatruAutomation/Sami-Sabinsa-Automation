@@ -1,0 +1,72 @@
+Select * from MCBINARYREWARDSMEMBERSNEW where member_code='MC20169888';
+
+update MCBINARYREWARDSMEMBERSNEW set actual_enddate ='18-NOV-20' where reward_code='MC17000001';
+
+ update mcbinaryrewardsettings set reward_points =5 where member_type=1 and setting_code='MC13000001';
+              update mcbinaryrewardsettings set reward_points =10 where member_type=2 and setting_code='MC13000003';
+              update mcbinaryrewardsettings set reward_points =10 where member_type=3 and setting_code='MC13000004';
+
+SELECT * FROM mcmembermaster where id_no='SD63981770';
+EXEC pro_run_bin_rewards_new(TO_DATE('29-OCT-2020','dd-MON-yyyy')); 
+
+delete MCBINARYREWARDSMEMBERSNEW where member_code='MC20169888';
+
+ SELECT   *
+              FROM     mcbinaryrewardsettings;
+              
+              Select * from mcbinaryrewardsmasternew;
+              
+              update mcbinaryrewardsmasternew set duration_days=30 where reward_code='MC17000001';
+			  
+			  
+			  
+			  Select * from MCBINARYREWARDSMEMBERSNEW where member_code='MC20169888';
+EXEC pro_run_bin_rewards_new(TO_DATE(trunc(sysdate+1),'dd-MON-yyyy'));
+delete MCBINARYREWARDSMEMBERSNEW where member_code='MC20169888';
+update MCBINARYREWARDSMEMBERSNEW set actual_enddate ='18-NOV-20' where reward_code='MC17000001';
+
+ update mcbinaryrewardsettings set reward_points =40 where member_type=1 and setting_code='MC13000001';
+              update mcbinaryrewardsettings set reward_points =70 where member_type=2 and setting_code='MC13000003';
+              update mcbinaryrewardsettings set reward_points =100 where member_type=3 and setting_code='MC13000004';
+
+SELECT * FROM mcmembermaster where id_no='SD63981770';
+SELECT date_of_joining, bc_activated, member_active, bc_activation_date from mcmembermaster where id_no='SD46235541';  
+update mcmembermaster set bc_activated='Y', date_of_joining='23-JUL-2020',bc_activation_date='28-OCT-2020' where id_no='SD63981770';
+EXEC pro_run_bin_rewards_new(TO_DATE('29-OCT-2020','dd-MON-yyyy')); 
+
+delete MCBINARYREWARDSMEMBERSNEW where member_code='MC20169888';
+
+ SELECT   *
+              FROM     mcbinaryrewardsettings;
+              
+              Select * from mcbinaryrewardsmasternew;
+              update mcbinaryrewardsmasternew set duration_days='100' where reward_code='MC17000006';
+              
+              update mcbinaryrewardsmasternew set duration_days=30 where reward_code='MC17000001';
+              
+              
+     SELECT   MAX(duration_days)
+     -- INTO     v_max_tb_reward_duration
+      FROM     mcbinaryrewardsmasternew
+      WHERE    reward_type = 'TB';
+     
+      SELECT   *
+     -- INTO     v_max_tb_reward_duration
+      FROM     mcbinaryrewardsmasternew
+      WHERE    reward_type = 'TB';
+     
+       SELECT   MAX(duration_days)
+     -- INTO     v_max_tb_reward_duration
+      FROM     mcbinaryrewardsmasternew
+      WHERE    reward_type = 'LT';
+     
+      update mcbinaryrewardsmasternew set DURATION_DAYS=90 where REWARD_CODE='MC17000001' and REWARD_ID=1;
+      update mcbinaryrewardsmasternew set DURATION_DAYS=180 where REWARD_CODE='MC17000002' and REWARD_ID=2;
+      update mcbinaryrewardsmasternew set DURATION_DAYS=365 where REWARD_CODE='MC17000003' and REWARD_ID=3;
+     
+      update mcbinaryrewardsmasternew set DURATION_DAYS=840 where REWARD_CODE='MC17000004' and REWARD_ID=4;
+      update mcbinaryrewardsmasternew set DURATION_DAYS=840 where REWARD_CODE='MC17000005' and REWARD_ID=5;
+      update mcbinaryrewardsmasternew set DURATION_DAYS=840 where REWARD_CODE='MC17000006' and REWARD_ID=6;
+   
+​
+    EXEC pro_run_bin_rewards_new(TO_DATE('29-OCT-2020','dd-MON-yyyy'));
